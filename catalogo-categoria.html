@@ -1,0 +1,344 @@
+<!DOCTYPE html><html class="light" lang="es"><head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head><body class="bg-surface font-body text-on-background antialiased overflow-x-hidden">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "error-container": "#ffdad6",
+                "on-tertiary-container": "#009395",
+                "tertiary": "#000000",
+                "outline-variant": "#c4c6cf",
+                "tertiary-fixed-dim": "#2ddbde",
+                "inverse-primary": "#adc7ff",
+                "surface": "#f8f9fa",
+                "on-tertiary-fixed-variant": "#004f51",
+                "on-error-container": "#93000a",
+                "tertiary-container": "#002021",
+                "surface-container-highest": "#e1e3e4",
+                "on-tertiary-fixed": "#002020",
+                "primary-fixed-dim": "#adc7ff",
+                "on-primary-container": "#2180ff",
+                "surface-container": "#edeeef",
+                "on-surface": "#191c1d",
+                "on-tertiary": "#ffffff",
+                "primary": "#000000",
+                "on-error": "#ffffff",
+                "secondary-container": "#dae3f0",
+                "surface-variant": "#e1e3e4",
+                "surface-bright": "#f8f9fa",
+                "surface-container-low": "#f3f4f5",
+                "secondary-fixed-dim": "#bec7d3",
+                "secondary": "#565f6a",
+                "on-primary": "#ffffff",
+                "outline": "#74777f",
+                "on-secondary-fixed-variant": "#3f4852",
+                "error": "#ba1a1a",
+                "surface-container-high": "#e7e8e9",
+                "on-secondary-fixed": "#131c25",
+                "secondary-fixed": "#dae3f0",
+                "inverse-on-surface": "#f0f1f2",
+                "on-primary-fixed": "#001a41",
+                "on-background": "#191c1d",
+                "on-secondary-container": "#5c6570",
+                "surface-dim": "#d9dadb",
+                "background": "#f8f9fa",
+                "tertiary-fixed": "#5af8fb",
+                "surface-tint": "#005bc0",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed": "#d8e2ff",
+                "primary-container": "#001a41",
+                "inverse-surface": "#2e3132",
+                "on-primary-fixed-variant": "#004493",
+                "on-surface-variant": "#44474e"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {},
+        "fontFamily": {
+                "headline": [
+                        "Manrope"
+                ],
+                "display": [
+                        "Manrope"
+                ],
+                "body": [
+                        "Inter"
+                ],
+                "label": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {}
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f8f9fa] dark:bg-[#171e36]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto relative">
+<div class="flex items-center gap-12">
+
+
+<img alt="Vestum Logo" class="h-20 md:h-28 w-auto object-contain transition-all h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiOcreibAaPZiNi2tgMy15dyahtHg3SybQBBMcpy35VM6J74jKw0_FTcMngLcNGyZvNKeAT6xkdiOuhaIL_4EjrtTWZabo-odKVMEhLKMC-9cI3F_0F4nrxmPvlgpql5GPUXn4VRrXTtOnzAcEJXo7uMnXDdHZfRWU9j_d9Oq_yp0xV0NCkm2C6oE3YgJ3gVWDnHRMXZ3T52AQNWKkZkcWjGJjt61V1ZJbhNdo9JB7PQUdlmL5bbU54XJugFhKODm1ML_3iQ48YAQ">
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#5c6570] hover:text-[#19233f] transition-colors font-manrope uppercase tracking-tighter text-sm" href="index.html">Inicio</a>
+
+            
+<div class="relative group z-50">
+    <a class="text-[#5c6570] hover:text-[#171e36] transition-colors font-manrope uppercase tracking-tighter text-sm cursor-pointer py-4" href="catalogo-categoria.html">Catálogo</a>
+    <div class="absolute left-1/2 -translate-x-1/2 mt-0 w-[650px] bg-white dark:bg-[#171e36] rounded-2xl shadow-2xl p-6 hidden group-hover:block border border-[#c4c6cf]/20">
+        <div class="grid grid-cols-2 gap-4">
+            <a href="uniformes-empresariales.html" class="flex items-center gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-all group/item">
+                <div class="bg-[#dae3f0] text-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover/item:bg-primary-container group-hover/item:text-white transition-colors">
+                    <span class="material-symbols-outlined">corporate_fare</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-[#19233f] dark:text-white mb-0.5">Uniformes empresariales</h4>
+                    <p class="text-[11px] text-[#5c6570] dark:text-[#c4c6cf]">Imagen corporativa impecable</p>
+                </div>
+            </a>
+            
+            <a href="uniformes-escolares.html" class="flex items-center gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-all group/item">
+                <div class="bg-[#dae3f0] text-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover/item:bg-primary-container group-hover/item:text-white transition-colors">
+                    <span class="material-symbols-outlined">school</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-[#19233f] dark:text-white mb-0.5">Uniformes escolares</h4>
+                    <p class="text-[11px] text-[#5c6570] dark:text-[#c4c6cf]">Durabilidad y comodidad</p>
+                </div>
+            </a>
+            <a href="antifluidos.html" class="flex items-center gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-all group/item">
+                <div class="bg-[#dae3f0] text-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover/item:bg-primary-container group-hover/item:text-white transition-colors">
+                    <span class="material-symbols-outlined">medical_services</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-[#19233f] dark:text-white mb-0.5">Antifluidos</h4>
+                    <p class="text-[11px] text-[#5c6570] dark:text-[#c4c6cf]">Protección para salud</p>
+                </div>
+            </a>
+            <a href="area-industrial.html" class="flex items-center gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-all group/item">
+                <div class="bg-[#dae3f0] text-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover/item:bg-primary-container group-hover/item:text-white transition-colors">
+                    <span class="material-symbols-outlined">factory</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-[#19233f] dark:text-white mb-0.5">Area Industrial</h4>
+                    <p class="text-[11px] text-[#5c6570] dark:text-[#c4c6cf]">Resistencia máxima</p>
+                </div>
+            </a>
+            <a href="uniformes-deportivos.html" class="flex items-center gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-all group/item">
+                <div class="bg-[#dae3f0] text-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover/item:bg-primary-container group-hover/item:text-white transition-colors">
+                    <span class="material-symbols-outlined">sports_soccer</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-[#19233f] dark:text-white mb-0.5">Uniformes deportivos</h4>
+                    <p class="text-[11px] text-[#5c6570] dark:text-[#c4c6cf]">Tejidos técnicos de alto rendimiento</p>
+                </div>
+            </a>
+            <a href="bordados-estampados.html" class="flex items-center gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-all group/item">
+                <div class="bg-[#dae3f0] text-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover/item:bg-primary-container group-hover/item:text-white transition-colors">
+                    <span class="material-symbols-outlined">apparel</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-[#19233f] dark:text-white mb-0.5">Bordados y estampados</h4>
+                    <p class="text-[11px] text-[#5c6570] dark:text-[#c4c6cf]">Personalización HD</p>
+                </div>
+            </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-[#c4c6cf]/15 text-center">
+            <a href="articulos-merchandising.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#2180ff] hover:text-[#004493] transition-colors bg-[#f3f4f5] px-6 py-2 rounded-full">
+                <span class="material-symbols-outlined text-[18px]">shopping_bag</span> Ver Artículos Merchandising
+            </a>
+        </div>
+    </div>
+</div>
+
+<a class="text-[#5c6570] hover:text-[#19233f] transition-colors font-manrope uppercase tracking-tighter text-sm inline-block text-center" href="https://www.catalogospromocionales.com/seccion/inicio.html" target="_blank">Catalogo Promocionales</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment?id=20193&amp;searchedCategoryId=&amp;searchedAgreementName=LIMINA%20SOLUCIONES%20INTEGRALES%20SAS" target="_blank" class="transition-transform hover:scale-105 inline-block">
+    <img src="mipagoamigo.png" alt="Mi Pago Amigo" class="h-6 md:h-10 w-auto object-contain">
+</a>
+
+
+
+</div>
+<div class="bg-[#f3f4f5] dark:bg-[#001a41] h-[1px] w-full absolute bottom-0 left-0"></div>
+</div>
+</nav>
+<main class="pt-32 pb-24 md:pb-12">
+<!-- Hero Section: Catalog by Category -->
+<section class="px-8 max-w-[1440px] mx-auto mb-16">
+<div class="flex flex-col md:flex-row gap-12 items-end">
+<div class="w-full md:w-7/12">
+<span class="text-primary-container font-headline font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Especialización Textil Profesional</span>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl text-primary-container tracking-tighter leading-[0.95]">
+                        Catálogo por <br><span class="text-primary">Categoría</span>
+</h1>
+</div>
+<div class="w-full md:w-5/12 pb-2">
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                        Soluciones textiles diseñadas específicamente para cada necesidad corporativa y técnica. Seleccione su categoría para ver productos especializados.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Categories Bento Grid -->
+<section class="px-8 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Uniformes empresariales (Large) -->
+<a class="md:col-span-8 group relative overflow-hidden rounded-xl h-[450px] bg-primary-container block cursor-pointer" href="uniformes-empresariales.html">
+<img alt="Uniformes empresariales" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfOx78AlVr3f3-sRKwl_EDpTsgMHNzDZyQrlCDocTXV3AAOvxvR9svqE31Y30z3Oru82Rh6mhn5qhQu_BWu52YTukk1HcXZR_7hWByRSf2yomG-EoOdoqGX_fm467iCyVFRK7B59WlgD7nJAsVtH-103gpk17DB7djpZCQbjJf3WZPwmuZBczQlRudiomqukm86X87fvx4aF_q21b7BMA_CPNT-6-kATGb4JBb0sCChG7O6P2N66UiNl87PqOLsS8BYdebiMswnlkTww">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-12 h-[1px] bg-tertiary-fixed"></span>
+<span class="text-tertiary-fixed font-headline uppercase tracking-widest text-xs font-bold">01 Categoría</span>
+</div>
+<h3 class="text-surface font-headline font-extrabold text-4xl mb-4">Uniformes empresariales</h3>
+<p class="text-outline-variant max-w-md mb-8">Imagen corporativa impecable con materiales de alta calidad y diseño contemporáneo.</p>
+
+</div>
+</a>
+<!-- Uniformes escolares -->
+<a class="md:col-span-4 group relative overflow-hidden rounded-xl h-[450px] bg-surface-container-high block cursor-pointer" href="uniformes-escolares.html">
+<img alt="Uniformes escolares" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwXz5ouIm_KgPVk4thxxAqLhqHsVEidpUxiBRD_qn3anjIbXdOyXOVM871xClgQzcUF_VdxRGv1pGqkb9-qJf_TVpdAzI9m5XI8SmuGaWDryGGOSNcJA-gPQ0zF--IF9nloTBXwNRzgkDM8coDAuo1RrQS53By57QfNe17CSNBFCoKTLi4qX48Ii80h3Qo2SxQ4Ng5T26J_n0_dVDHLPaF4j4EgEZDjJQ7AcYfWmTovz6AR7AAuz0uMram95OE_tsCg13xGI4OLWzlA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="text-tertiary-fixed font-headline uppercase tracking-widest text-xs font-bold block mb-2">02 Categoría</span>
+<h3 class="text-surface font-headline font-extrabold text-3xl mb-4">Uniformes escolares</h3>
+
+</div>
+</a>
+<!-- Antifluidos -->
+<a class="md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] bg-surface-container-low block cursor-pointer" href="antifluidos.html">
+<img alt="Antifluidos" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYsXGvUlC0Brh5UH4MTdBCtrPp40FdCSuzzmu6DHbjcKAFdokN9oOVexVkIR9zR-0KyXY9dlvI9WqHLeOMb1ivWXjMgaJzjZFsuLdiQ2JSm5L3KP1laMoxLhEQyCbGWmnEl09H71To1XGilffuq8YTic5YTmcmuDLG8mT5xN0ZpYSseh9qnWtK6pY6flnW2IBCYDh90MYrl7XXTXGRURaOUNdDtkZyFZxKHRrS_ue-x0RGb0yLuyoTVgI3qVRSKFagpnKfVKDiAbVytw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="text-tertiary-fixed font-headline uppercase tracking-widest text-xs font-bold block mb-2">03 Categoría</span>
+<h3 class="text-surface font-headline font-extrabold text-3xl mb-4">Antifluidos</h3>
+
+</div>
+</a>
+<!-- Area Industrial -->
+<a class="md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] bg-primary-container block cursor-pointer" href="area-industrial.html">
+<img alt="Area Industrial" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACSdJz8rjV3hNn-Ni0sy7vrc5qyGazyA9O7WsUIQxtEanO8i4AHKJ4ynbChMS_NryLokyik-czj_hJAikx1PNy1MqYfnm4XNz-uYfMsCvUt5EeHaRsg7Ek4K15vHG1vHBfAL2cKnrW54GYsQw_oN7EnMwVWbDoVPmolLbEgnZqKnHndpypLNk2yn53ER4lteq60XuEILLOt4aSX2RmK1bTiWpQIEeLbj5KPkjj-heyxLq5ohZx61pg9-Qc-UgSTiz6EoRbnvLKPIuZRw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="text-tertiary-fixed font-headline uppercase tracking-widest text-xs font-bold block mb-2">04 Categoría</span>
+<h3 class="text-surface font-headline font-extrabold text-3xl mb-4">Area Industrial</h3>
+
+</div>
+</a>
+<!-- Uniformes deportivos -->
+<a class="md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] bg-surface-container-high block cursor-pointer" href="uniformes-deportivos.html">
+<img alt="Uniformes deportivos" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3JNnVL0RBP3nGDVFnv5-4CiEhngEQPDdDwxPOur1yB95GGOxtC9evqE5sHLNGG8jh0Jmml92cXjaOE-EUD-DP1KgRqeBVQYicSofjg_TOW3YJpC1QaFFoMRRL1yqTTQ8b0tzJSdEHFmJJlLLUSvIP7H0NqJLxJmDtBjZdF-wXEZ8CfUNFiLH2lxtU1Uq0mCwUbPFKmjnmX66GjsKbeTgHqqr5gYoh_OQ5AntbvvcsHznil-gns1makTC3C1cHu82NRVQn2zEyBDbBNQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="text-tertiary-fixed font-headline uppercase tracking-widest text-xs font-bold block mb-2">05 Categoría</span>
+<h3 class="text-surface font-headline font-extrabold text-3xl mb-4">Uniformes deportivos</h3>
+
+</div>
+</a>
+<!-- Bordados y estampados -->
+<a class="md:col-span-6 group relative overflow-hidden rounded-xl h-[400px] bg-[#19233f] block cursor-pointer" href="bordados-estampados.html">
+<img alt="Bordados y estampados" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBggDJ22-2bQE2UgQakuadgLb8TQwwoDkaej2cayfGVg59Am3aOeZUg4Em9UBUmG3QMnX1_Por99XZrjcME0hTv09wls02u1anOIQTHseLaJXONfROfMyB0hi3jeotUdVneHdfu6MPEVopFJ8tVkdlAo2qKL3M2mz3MaRfTZHI3rSeZChNkPm2S5jATD_56wkjHoHRCpsQZV4DN_Uy7zPsa2cq3kn58nYbiHJqeWhQvuDkuY9TOS_c6tTxAbW_pq4Yexn57IUGWx8NvCw">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 via-primary-container/40 to-transparent"></div>
+<div class="absolute inset-y-0 left-0 p-10 flex flex-col justify-center max-w-md">
+<span class="text-tertiary-fixed font-headline uppercase tracking-widest text-xs font-bold block mb-2">06 Especialidad</span>
+<h3 class="text-surface font-headline font-extrabold text-4xl mb-4">Bordados y estampados</h3>
+<p class="text-outline-variant mb-6">Personalización de alta precisión para su marca en cualquier prenda textil.</p>
+
+</div>
+</a>
+<!-- Articulos merchandising -->
+<a class="md:col-span-6 group relative overflow-hidden rounded-xl h-[400px] bg-surface-container-low block cursor-pointer" href="articulos-merchandising.html">
+<img alt="Articulos merchandising" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkDiptrE3KYY4HsDqwj6lo0xnFELXW6o-7VmPt9_vvxU6yLRV38sxngfw3diD1MG8JwPurNIyenBi58JdoICw6_kM0_FdVk2m8066U3aUYI0T4mOPDU-1O7Ckg6Uqh9diVrXC6ftoYDqUthBU3hfcAT3q8NTre4HCKlX5ZSz2Ouv4BkrFkFLAVkWTarGw19xuFtz47047LpWyT1FgRnhOf5Zn346QnMwnVvHDE3CFkUYKpyPZx2BXkcgtuMwpA_MsAUDv-pUKXSnqvdw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="text-tertiary-fixed font-headline uppercase tracking-widest text-xs font-bold block mb-2">07 Complemento</span>
+<h3 class="text-surface font-headline font-extrabold text-4xl mb-4">Articulos merchandising</h3>
+<p class="text-outline-variant mb-6">Productos promocionales para fortalecer la presencia de su marca.</p>
+
+</div>
+</a>
+</section>
+<!-- Fabric Insight Section -->
+<section class="mt-24 px-8 max-w-[1440px] mx-auto">
+<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col lg:flex-row border border-outline-variant/15">
+<div class="lg:w-1/2 h-[400px] lg:h-auto overflow-hidden">
+<img alt="Textura textil" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIL2L45bdK6fwSMDeCj2CYSYXR_GfbNhVrs5ghVnga3-ic8tEg-4A2m3IKAxMQ0JH9KUjixeCtCoDeTEpzlQcNnpIDODrrgKavFj4Gcjj6P-VTqtoO7BjrGF4KnWkTnTRKlL-dXfKN7wOKwgxHxYIu03FuaXtiP5zFy3XwPss42iWfG_u395mW5I9w7jeMvE7QDql6yXyzK3-yxy2w5otSlQaacD8MHGBLkSewQZ7zwtj4VUVvTO9VOch7BRHnmU757_QAl_IyINs">
+</div>
+<div class="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center bg-surface-container-lowest">
+<div class="w-16 h-1 bg-primary-container mb-8"></div>
+<h2 class="font-headline font-extrabold text-4xl text-primary-container mb-6 leading-tight">La ingeniería del tejido es nuestra prioridad.</h2>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+                        Desarrollamos soluciones textiles que combinan durabilidad, confort y estética. Cada costura y cada fibra está seleccionada bajo los más altos estándares de calidad.
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="block text-primary-container font-extrabold text-2xl mb-1">+45</span>
+<span class="text-on-secondary-container text-sm uppercase tracking-widest font-bold">Certificaciones</span>
+</div>
+<div>
+<span class="block text-primary-container font-extrabold text-2xl mb-1">100%</span>
+<span class="text-on-secondary-container text-sm uppercase tracking-widest font-bold">Garantía Vestum</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#19233f]">
+<div class="bg-[#f3f4f5]/10 h-[1px] w-full"></div>
+<div class="flex flex-col items-center py-12 px-8 text-center max-w-[1440px] mx-auto">
+<img alt="Vestum Logo" class="w-auto mb-8 object-contain h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmWXbaLPPa-LFKITupENgvEK52TjHPZyGhcn5fo2iWlRUejDZWnyHgfvoU3nddxpSTWjUdR0dbDDfPa55qyAuxRqlPK0L8kR5G4XzOZqAzafyv6FccbDinlwtPdofKufek1xa3X9YnegH8eXPJI1i8jQe4M7zYtfhTfgGJN9agatXer_1BMUR_lguMD75uEt-GxAKJetWdHIWJyDurtL8I8wjj5lWC9xAOd9fITU_NW8KUrxdk_HIREhrI8F4cyhRHyo1arL883xc">
+<div class="flex gap-8 mb-8"><a class="text-[#c4c6cf] hover:text-white font-inter text-sm tracking-normal hover:underline decoration-[#5af8fb] underline-offset-4 transition-opacity duration-200" href="https://wa.me/573123738974" target="_blank">Contactos</a><a class="text-[#c4c6cf] hover:text-white font-inter text-sm tracking-normal hover:underline decoration-[#5af8fb] underline-offset-4 transition-opacity duration-200" href="https://maps.app.goo.gl/pxqWrWYVzh7ic4gF6" target="_blank">Ubicación</a></div>
+<div class="flex gap-6 mb-12">
+<a class="text-white/50 hover:text-white cursor-pointer transition-colors text-2xl" href="https://www.facebook.com/profile.php?id=61589275717030" target="_blank"><i class="fab fa-facebook"></i></a>
+<a class="text-white/50 hover:text-white cursor-pointer transition-colors text-2xl" href="https://www.instagram.com/vestumconfeccion/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a class="text-white/50 hover:text-white cursor-pointer transition-colors text-2xl" href="https://www.tiktok.com/@vestumconfeccion" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+<p class="text-[#c4c6cf] text-xs font-inter tracking-normal opacity-60">
+                © 2026 Vestum Confección Profesional. Todos los derechos reservados.
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-lg bg-[#f8f9fa] dark:bg-[#19233f] border-t border-[#c4c6cf]/15 shadow-[0_-12px_32px_rgba(25,28,29,0.06)] flex justify-around items-center h-20 px-4 md:hidden">
+<a class="flex flex-col items-center justify-center text-[#5c6570] dark:text-[#c4c6cf] hover:text-[#19233f] dark:hover:text-white transition-all" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-manrope font-bold uppercase tracking-widest mt-1">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#19233f] bg-[#dae3f0] dark:bg-[#1e2a4a] rounded-xl px-4 py-1 active:scale-90 duration-150" href="catalogo-categoria.html">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-manrope font-bold uppercase tracking-widest mt-1">Catálogo</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#5c6570] dark:text-[#c4c6cf] hover:text-[#19233f] dark:hover:text-white transition-all" href="https://wa.me/573123738974" target="_blank">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="text-[10px] font-manrope font-bold uppercase tracking-widest mt-1">Cotizador</span>
+</a>
+</nav>
+
+
+
+
+</body></html>
